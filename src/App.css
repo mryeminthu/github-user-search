@@ -5,3 +5,8 @@
     box-sizing: border-box;
     background: #00FA9A;
   }
+
+  .app-title {
+    text-align: center;
+    margin: 12px 0;
+  }

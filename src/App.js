@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1>Github User Search</h1>
+      <h1 className='app-title'>Github User Search</h1>
       <Search />
     </div>
   );
