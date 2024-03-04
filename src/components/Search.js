@@ -27,6 +27,7 @@ const Search = () => {
 
   return (
     <div className='search-container'>
+      <div className='input-container'>
       <input
         type="text"
         placeholder="Search for GitHub users..."
@@ -34,7 +35,8 @@ const Search = () => {
         onChange={(e) => setSearchTerm(e.target.value)}
         className="input-full-width"
       />
-      <div className='container'>
+      </div>
+      <div className='user-container'>
         {users.map((user) => (
           <div key={user.id} className="user-card">
             <img src={user.avatar_url} alt={`${user.login}'s avatar`} />
