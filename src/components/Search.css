@@ -1,0 +1,21 @@
+* {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgba(167, 112, 204, 0.753);
+  }
+  
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+  }
+  
+  

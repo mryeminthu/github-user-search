@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import './Search.css';
 
 const Search = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -25,7 +26,7 @@ const Search = () => {
   }, [searchTerm]);
 
   return (
-    <div>
+    <div className='container'>
       <input
         type="text"
         placeholder="Search for GitHub users..."
