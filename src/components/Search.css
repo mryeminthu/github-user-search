@@ -15,10 +15,10 @@
     border-radius: 10px;
     outline: none;
     background-color: #ffffff;
+    color: #363636;
   }
   
   .user-card {
-    border: 3px solid hsl(0, 7%, 92%);
     padding: 15px;
     margin-bottom: 15px;
     border-radius: 7px;
