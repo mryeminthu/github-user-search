@@ -3,10 +3,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: #00FA9A;
+    background: #0069fc;
   }
 
   .app-title {
     text-align: center;
     margin: 12px 0;
+    color: #ffffff;
   }
