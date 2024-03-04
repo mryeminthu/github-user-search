@@ -26,25 +26,25 @@ const Search = () => {
   }, [searchTerm]);
 
   return (
-    <div className='container'>
-              <input
-          type="text"
-          placeholder="Search for GitHub users..."
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          className="input-full-width"
-        />
-      <div>
-  {users.map((user) => (
-    <div key={user.id} className="user-card">
-      <img src={user.avatar_url} alt={`${user.login}'s avatar`} />
-      <h2>{user.login}</h2>
-      <a href={user.html_url} target="_blank" rel="noopener noreferrer">
-        Profile Link
-      </a>
-    </div>
-  ))}
-</div>
+    <div className='search-container'>
+      <input
+        type="text"
+        placeholder="Search for GitHub users..."
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+        className="input-full-width"
+      />
+      <div className='container'>
+        {users.map((user) => (
+          <div key={user.id} className="user-card">
+            <img src={user.avatar_url} alt={`${user.login}'s avatar`} />
+            <h2>{user.login}</h2>
+            <a href={user.html_url} target="_blank" rel="noopener noreferrer">
+              Profile Link
+            </a>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
